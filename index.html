@@ -9,21 +9,23 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo"><img src="./images/a75cced21e283b5f4be54dc24a78da2ade300511.png " alt="website logo"></a>
+        <a href="#" class="logo"><img src="./images/a75cced21e283b5f4be54dc24a78da2ade300511.png" alt="website logo"></a>
         <nav class="logonav">
-            <a href="#">Browse Courses</a>
-            <a href="#">Enrolled Courses</a>
+            <ul class="headernav">
+                <li><a href="#">Browse Courses</a></li>
+                <li><a href="#">Enrolled Courses</a></li>
+            </ul>
             
         </nav>
     </header>
 
     <main>
         <section class="heroslider">
-            <form class="signup">
-            <h1>Sign in</h1>
-            <p class="herosliderp">start learning today</p>
+            <form class="signin">
+            <p class="signintitle">Sign in</p>
+            <p class="signintext">start learning today</p>
             <label for="email" >Email</label>
-            <input type="email" placeholder="email" id="password">
+            <input type="email" placeholder="email" id="email">
             <label for="password" >Password</label>
             <input type="password" placeholder="password" id="password">
             <button type="submit">Sign in</button>
@@ -31,63 +33,65 @@
             </form>
             <img class="heroimg" src="./images/dfc2fadfbba911a1a07ab99c2358a787702a63cc.png" alt="nextosignup">
         </section>
-        <section class="seqcia">
-            <aside class="hp">
+        <section class="coursesection">
+            <div class="coursesintro">
                 <h2>Start Learning Today</h2>
                 <p>Choose from our most popular courses and begin your jounrney</p>
 
-
-            </aside>
+            </div>
+            
 
             <ul class="courses">
-                <li>
-                    <article class="bffooter">
+                <li class="courselist">
+                    
                         <img src="./images/19cd2a1addea0fbf3982fd1b84786bb1c760fb05.png" alt="">
-                        <p class="name">Lecturer Marilyn Mango</p>
+                        <p class="lecturer">Lecturer Marilyn Mango</p>
                         <h3>Advanced React & TypeScript Development</h3>
-                        <p class="text">Master modern React patterns, hooks, and TypeScript integration for building scalable web applications.</p>
-                        <aside class="priceaside">
-                            <p class="price">starting from <strong class="strong">$299</strong></p>
+                        <p class="desc">Master modern React patterns, hooks, and TypeScript integration for building scalable web applications.</p>
+                        <div class="pricebox">
+                            <p class="price">starting from <strong class="pricenumber">$299</strong></p>
                             <button type="button">Details</button>
-                        </aside>
-                    </article>
+                        </div>
+                    
 
                 </li>
-                <li>
-                    <article class="bffooter">
+                <li class="courselist">
+                    
                         <img src="./images/19cd2a1addea0fbf3982fd1b84786bb1c760fb05.png" alt="">
-                        <p class="name">Lecturer Marilyn Mango</p>
+                        <p class="lecturer">Lecturer Marilyn Mango</p>
                         <h3>Advanced React & TypeScript Development</h3>
-                        <p class="text">Master modern React patterns, hooks, and TypeScript integration for building scalable web applications.</p>
-                        <aside class="priceaside">
-                            <p class="price">starting from <strong class="strong">$299</strong></p>
+                        <p class="desc">Master modern React patterns, hooks, and TypeScript integration for building scalable web applications.</p>
+                        <div class="pricebox">
+                            <p class="price">starting from <strong class="pricenumber">$299</strong></p>
                             <button type="button">Details</button>
-                        </aside>
-                    </article>
+                        </div>
+                    
+
                 </li>
-                <li>
-                    <article class="bffooter">
+                <li class="courselist">
+                    
                         <img src="./images/19cd2a1addea0fbf3982fd1b84786bb1c760fb05.png" alt="">
-                        <p class="name">Lecturer Marilyn Mango</p>
+                        <p class="lecturer">Lecturer Marilyn Mango</p>
                         <h3>Advanced React & TypeScript Development</h3>
-                        <p class="text">Master modern React patterns, hooks, and TypeScript integration for building scalable web applications.</p>
-                        <aside class="priceaside">
-                            <p class="price">starting from <strong class="strong">$299</strong></p>
+                        <p class="desc">Master modern React patterns, hooks, and TypeScript integration for building scalable web applications.</p>
+                        <div class="pricebox">
+                            <p class="price">starting from <strong class="pricenumber">$299</strong></p>
                             <button type="button">Details</button>
-                        </aside>
-                    </article>
+                        </div>
+                    
+
                 </li>
             </ul>
         </section>
     </main>
     <footer class="footer">
-        <section class="footersec">
-            <section class="rightside">
+        <div class="footertop">
+            <div class="footerinfo">
                 <a href="#" class="footerlogo">
                 <img src="./images/a75cced21e283b5f4be54dc24a78da2ade300511.png" alt="logo">
                 COURSES
                 </a>
-                <p class="tag">Your learning journey starts here!<br> Browse courses to get started.</p>
+                <p class="tagline">Your learning journey starts here!<br> Browse courses to get started.</p>
                 <ul class="social">
                     <li><a href="#"><img src="./images/Facebook.png" alt="Facebook"></a></li>
                     <li><a href="#"><img src="./images/Twitter.png" alt="Twitter"></a></li>
@@ -95,32 +99,32 @@
                     <li><a href="#"><img src="./images/LinkedIn.png" alt="LinkedIn"></a></li>
                     <li><a href="#"><img src="./images/YouTube.png" alt="YouTube"></a></li>
                 </ul>
-            </section>
-        <nav class="leftside">
-            <section>
+            </div>
+        <nav class="footerlinks">
+            <div>
                 <h3>Explore</h3>
                 <ul>
                     <li><a href="#">Enrolled Courses</a></li>
                     <li><a href="#">Browse Courses</a></li>
                 </ul>
-            </section>
-            <section>
+            </div>
+            <div>
                 <h3>Account</h3>
                 <ul>
                     <li><a href="#">My Profile</a></li>
                 </ul>
-            </section>
-            <section>
+            </div>
+            <div>
                 <h3>Contact</h3>
                 <ul>
                     <li><img src="./images/Vector.png" alt="email"><a href="mailto:contact@company.com">contact@company.com</a></li>
                     <li><img src="./images/Vector (1).png" alt="phonenumber"><a href="tel:+995555111222">(+995) 555 111 222</a></li>
                     <li><img src="./images/Vector (2).png" alt="location"><a>ilia chavchavadze 83</a></li>
                 </ul>
-            </section>
+            </div>
         </nav>
-        </section>
-        <ul class="copyright">
+        </div>
+        <ul class="footerbottom">
         <li>All Rights Reserved</li>
         <li><a href="#">Terms and Conditions</a></li>
         <li><a href="#">Privacy Policy</a></li>

@@ -9,35 +9,29 @@ body{
 }
 header{
     width: 100%;
-    height: 108px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 177px;
+    padding: 34px 177px;
     border-bottom: 1px solid #e0e0e0;
 }
 
-
-    
-
-.logo img{
-    
-    width: 55px;
-    height: 39px;
-    border-radius: 10px;
-    
-    
+.logo{
+    display: block;
+    width: 100%;
+    max-width: 55px;
 }
-.logonav{
-    
-    height: 56px;
-    
+.logo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.headernav{
+    list-style: none;
     gap:24px;
     display: flex ;
     align-items: center;
-    
 }
-.logonav a{
+.headernav a{
     text-decoration: none;
     color:#C8177D;
 }
@@ -47,131 +41,115 @@ header{
     gap:90px;
     padding: 0 177px;
     margin-top:40px;
-    
 }
-.signup {
-    width: 432px;
-    height: 416px;
+.signin {
+    width: 100%;
+    max-width: 432px;
     background-color: #fff;
     padding:32px 24px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    
 }
-.signup h1{
+.signintitle{
     text-align:center;
     font-size:32px;
     font-weight: 600;
     color:black;
 }
-.herosliderp{
+.signintext{
     font-size:14px;
     font-weight: 500;
     text-align:center;
     color:#666666;
     margin-bottom: 20px;
 }
-.signup label {
+.signin label {
     margin-bottom: 10px;
     font-size:14px;
     font-weight: 500;
     color:black
 }
-.signup input {
-    height:48px;
+.signin input {
+    padding: 14px 10px;
     margin-bottom: 30px;
-    padding: 0 10px;
     border-radius: 8px;
     border: 1px solid #d0d0d0;
 }
-.signup button{
-    height:47px;
+.signin button{
     background-color: #C8177D;
     border-radius:8px;
     border:none;
     color:#fff;
-    padding:10px;
+    padding:14px 10px;
     gap:10px;
     font-family: sans-serif;
     margin-top:10px;
-
 }
 .heroimg{
     object-fit: cover;
-    height:416px;
+    max-height: 416px;
     border-radius: 20px;
-    
     flex:1;
-    
 }
 
-.seqcia{
+.coursesection{
     padding: 0 177px;
     margin: 64px 0;
 }
-.hp{
+.coursesintro{
     padding-bottom: 30px;
 }
-.hp h2{
+.coursesintro h2{
     color: #C8177D;
     font-size: 40px;
     font-weight: 600;
-    
 }
-.hp p{
+.coursesintro p{
     color: #3d3d3d;
     font-size :18px;
     font-weight: 400;
-    
 }
 .courses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style:none;
     gap:16px;
-    
 }
-.bffooter{
-    
+.courselist{
     background-color:#fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap:8px;
     border-radius: 12px;
-
 }
-.bffooter img{
+.courselist img{
     width:100%;
-    height:262px;
     border-radius:10px;
-    
 }
-.bffooter .name{
+.courselist .lecturer{
     font-size:14px;
     font-weight: 500;
     color: #8a8a8a;
 }
-.bffooter h3{
+.courselist h3{
     font-size:24px;
     color: #141414;
-
 }
-.bffooter .text{
+.courselist .desc{
     color:#666666;
     font-size:16px;
     font-weight:500;
-
 }
-.priceaside{
+.pricebox{
     margin-top:auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px;
 }
-.priceaside .price{
+.pricebox .price{
     font-size:12px;
     color: #8a8a8a;
     font-weight: 500;
@@ -179,13 +157,12 @@ header{
     align-items: center;
     gap:10px;
 }
-.priceaside .strong{
+.pricebox .pricenumber{
     color:#141414;
     font-size: 32px;
     font-weight: 600;
 }
 .courses button{
-    height: 58px;
     padding: 17px 25px 17px 25px;
     gap:10px;
     background-color: #C8177D;
@@ -194,7 +171,6 @@ header{
     font-weight: 500;
     border-radius:8px;
     border:none;
-    
 }
 
 .footer{
@@ -204,18 +180,17 @@ header{
     flex-direction: column;
     gap:48px;
 }
-.footersec{
+.footertop{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-.rightside{
+.footerinfo{
     display: flex;
     flex-direction: column;
     gap:16px;
 }
 .footerlogo{
-    
     display: flex;
     align-items: center;
     gap: 8px;
@@ -225,11 +200,12 @@ header{
     font-weight: 500;
 }
 .footerlogo img{
-    width: 45px;
-    height: 45px;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 45px;
     border-radius:10px;
 }
-.tag{
+.tagline{
     font-size:14px;
     font-weight: 500;
     color: #6c6c6c;
@@ -239,44 +215,43 @@ header{
     list-style: none    ;
     gap:24px;
 }
-.leftside{
+.footerlinks{
     display: flex;
     gap:90px;
 }
-.leftside h3{
+.footerlinks h3{
     font-size: 20px;
     font-weight: 600;
     color:#C8177D;
     margin-bottom: 16px;
 }
-.leftside ul{
+.footerlinks ul{
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.leftside li {
+.footerlinks li {
     display: flex;
     align-items: center;
     gap:8px;
     font-size:14px;
-    
 }
-.leftside a{
+.footerlinks a{
     text-decoration: none;
     color:#666666;
 }
-.copyright{
+.footerbottom{
     list-style: none;
     display: flex;
     justify-content: flex-end;
 }
-.copyright li{
+.footerbottom li{
     margin-left:8px;
     padding-left:8px;
     border-left:1px solid #666666;
 }
-.copyright a{
+.footerbottom a{
     text-decoration: none;
     color:#C8177D
 }
